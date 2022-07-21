@@ -1,0 +1,41 @@
+.hidden {
+    display: none;
+}
+
+/* reset */
+html, body { margin: 0 auto; padding: 0; font-size: 16px;}
+body { position: relative; margin:0; padding: 0; height: 100vh; font-size: 16px;}
+ul { list-style: none;}
+
+/* background */
+img { width: 100%; height: auto; position: absolute ;top: 0; left:0; margin: 0; padding: 0; background-size: cover;}
+
+/* clock */
+#clock { font-size: 9rem; z-index: 999; position: fixed; top:-3%; left: 50%; transform: translateX(-50%); color: rgba(255,255,255,0.8);}
+
+/* login-form */
+#login-form { position: absolute; top: 40%; left: 50%; transform: translateX(-50%); z-index: 999;width: 500px; text-align: center;}
+#login-form input[type=text] { font-size: 24px; color: #fff;  border: none; background: none; border-bottom: 3px solid #fff; padding: 10px 15px; width: 350px;}
+#login-form input[type=text]::placeholder { color: #fff; font-size: 24px; }
+#login-form input[type=text]:focus { outline: none;  }
+#login-form input[type=submit] { border-radius: 5px; font-size: 16px; border: 2px solid #fff; background: transparent; color: #fff; font-weight: bold; padding: 10px 20px; }
+#login-form input[type=submit]:hover { background: rgba(255,255,255,0.1); color: #fff; transition: all .5s;  }
+
+/* greeting */
+#greeting { font-weight: normal ;z-index: 999; position: absolute; top:40%; left: 50%; transform: translateX(-50%); width: 500px; margin: 0 auto; color: #fff; text-align: center; font-size: 60px;}
+
+/* to-do form */
+#todo-form { z-index: 999; position: absolute; top: 57%; left: 50%; transform: translateX(-50%); }
+#todo-form input[type=text] { font-size: 24px; color: #fff;  border: none; background: none; border-bottom: 3px solid #fff; padding: 10px 15px; width: 350px;}
+#todo-form input[type=text]:focus { outline: none; }
+#todo-form input[type=text]::placeholder { color: #fff; font-size: 24px;}
+
+/* to-do list */
+#todo-list { background: rgba(255,255,255,0.5); z-index: 999; position: absolute; top: 67%; left: 50%; transform: translate(-50%); color: #333; font-weight: bold; width: 350px; height: auto; padding: 20px; border-radius: 5px; text-align: left;;}
+#todo-list li { width: 100%;  font-size: 18px; margin-bottom: 3px; border-bottom: 1px solid #ddd; padding: 3px 5px;}
+#todo-list li button { float: right;}
+
+/* quote */
+#quote { z-index: 9999; position: absolute; top: 90%; left: 0; width: 100%; color: #fff; text-align: center; }
+
+#weather {z-index: 999; position: absolute; top:12%; color: #fff; width: 100%; text-align: center;}
